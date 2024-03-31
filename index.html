@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="custom.css">
+    <title>Promerio Tech | Week 10</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
+        <span class="navbar-brand"><strong class="txt-clr-primary">Promerio Tech </strong>| Iliana Franco</span><span>Week 10: JavaScript & DOM Manipulation</span>
+      </nav>
+      <h1 class="py-2">What color are your eyes?</h1>
+    </header>
+    <main class="container-fluid ">
+      <div class="card p-4">
+        <div class="row  d-flex align-items-center">
+          <div class="col-sm-8">
+            <div class="form-floating">
+              <input type="text" name="participantName" class="form-control" id="participantName" >
+              <label for="participantName">Your Name</label>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-floating">
+              <select name="eyeColor" id="eyeColor" class="form-select" >
+                <option value="" selected disabled>Choose Option</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+                <option value="hazel">Hazel</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="grey">Grey</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="eyeColor" class="floatingSelect">Eye Color</label>
+            </div>
+          </div>
+          <div class="col-sm">
+          <button type="submit" class="btn btn-primary" id="addToTable"> Add  to list</button>
+        </div>
+        </div>
+        
+      </div>
+      <table id="eyeColorTable" class="table table-light table-stripe">
+          <tr>
+            <th>Name</th>
+            <th colspan="2">Eye color</th>
+          </tr>
+        </table>
+    </main>
+    <footer class="container-fluid bg-body-tertiary mt-2 text-center">
+      <a href="#">Back to Repository &#9166;</a>
+      <a href="#">Git page &#8594;</a></footer>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="eyecolor.js"></script>
+  </body>
+</html>
