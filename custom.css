@@ -26,7 +26,8 @@ main {
 td:has(.fa-trash-o) {
     display: flex;
     justify-content: flex-end;
-    border: none;
+    align-items: center;
+    line-height: 2.3;
 }
 
 .validation-message {

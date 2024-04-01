@@ -20,13 +20,13 @@
         <div class="row  d-flex align-items-center">
           <div class="col-sm-8">
             <div class="form-floating">
-              <input type="text" name="participantName" class="form-control" id="participantName" >
+              <input type="text" name="participantName" class="form-control" id="participantName" required="true">
               <label for="participantName">Your Name</label>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="form-floating">
-              <select name="eyeColor" id="eyeColor" class="form-select" >
+              <select name="eyeColor" id="eyeColor" class="form-select" required="true">
                 <option value="" selected disabled hidden>Choose Option</option>
                 <option value="Black">Black</option>
                 <option value="Brown">Brown</option>
@@ -43,13 +43,13 @@
           <button type="submit" class="btn btn-primary" id="addToTable"><i class="fa fa-plus" aria-hidden="true"></i> Add  to list</button>
         </div>
         </div>
-        <div class=" p-1 text-danger validation-message">
-        </div>
+
       </div>
       <table id="eyeColorTable" class="table table-striped border border-top-0 rounded-bottom ">
           <tr>
             <th>Name</th>
-            <th class="w-25" colspan="2">Eye color</th>
+            <th class="w-25">Eye color</th>
+            <th class="w-25" colspan="2">%</th>
           </tr>
         </table>
     </main>
