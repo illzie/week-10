@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/7ab2b2d914.js" crossorigin="anonymous"></script>
     <title>Promerio Tech | Week 10</title>
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
+    <header>
+      <nav class="px-5 navbar navbar-expand-lg bg-body-tertiary d-flex justify-content-between">
         <span class="navbar-brand"><strong class="txt-clr-primary">Promerio Tech </strong>| Iliana Franco</span><span>Week 10: JavaScript & DOM Manipulation</span>
       </nav>
-      <h1 class="py-2">What color are your eyes?</h1>
+      <h1 class="p-5">What color are your eyes?</h1>
     </header>
-    <main class="container-fluid ">
-      <div class="card p-4">
+    <main class="container-fluid px-5">
+      <div class="form border rounded-top p-4">
         <div class="row  d-flex align-items-center">
           <div class="col-sm-8">
             <div class="form-floating">
@@ -39,15 +40,16 @@
             </div>
           </div>
           <div class="col-sm">
-          <button type="submit" class="btn btn-primary" id="addToTable"> Add  to list</button>
+          <button type="submit" class="btn btn-primary" id="addToTable"><i class="fa fa-plus" aria-hidden="true"></i> Add  to list</button>
         </div>
         </div>
-        
+        <div class=" p-1 text-danger validation-message">
+        </div>
       </div>
-      <table id="eyeColorTable" class="table table-light table-stripe">
+      <table id="eyeColorTable" class="table table-striped border border-top-0 rounded-bottom ">
           <tr>
             <th>Name</th>
-            <th colspan="2">Eye color</th>
+            <th class="w-25" colspan="2">Eye color</th>
           </tr>
         </table>
     </main>

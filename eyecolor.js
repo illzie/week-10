@@ -19,7 +19,7 @@ function deleteBtn(id) {
     let btn = document.createElement('button');
     btn.className = 'button-as-link text-danger';
     btn.id = id;
-    btn.innerHTML = 'Delete';
+    btn.innerHTML = '<i class="fa fa-trash-o" aria-hidden="true"></i> Delete';
     btn.onclick = () => {
         console.log(`Deleting row item-${id}`);
         let deletedRow = document.getElementById(`item-${id}`);

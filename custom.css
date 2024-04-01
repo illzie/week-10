@@ -19,6 +19,18 @@ main {
     opacity: 1;
 }
 
-table tr td:nth-child(3) {
-    width: 5ch;
+.form {
+    position: relative;
+}
+
+td:has(.fa-trash-o) {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+.validation-message {
+    position: absolute;
+    height: 1.5rem;
+    font-size: 0.7rem;
 }
